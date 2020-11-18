@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js --signal SIGTERM"
   },
   "keywords": [],
   "author": "Anish Ojha <anishojha82@gmail.com>",

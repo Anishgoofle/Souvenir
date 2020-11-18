@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 app.use(cors());
 
-const CONNECTION_URL = 'mongodb+srv://souvenirDB:souvenirDB123@souvenirdb.vt5bo.mongodb.net/<dbname>?retryWrites=true&w=majority';
-const PORT = process.env.PORT || 6000;
+const CONNECTION_URL = 'mongodb+srv://souvenirDB:souvenirDB123@souvenirdb.vt5bo.mongodb.net/SouvenirDB?retryWrites=true&w=majority';
+const PORT = process.env.PORT || 5000;
 
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
