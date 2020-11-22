@@ -6,13 +6,13 @@ const cors = require('cors');
 const postsRoute = require('./routes/posts.js');
 
 const app = express();
+app.use(cors());
 
 app.use('/posts', postsRoute);
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
-app.use(cors());
 
 const CONNECTION_URL = 'mongodb+srv://souvenirDB:souvenirDB123@souvenirdb.vt5bo.mongodb.net/SouvenirDB?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
